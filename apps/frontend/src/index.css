@@ -128,3 +128,27 @@ button:focus-visible {
     animation: logo-spin infinite 20s linear;
   }
 }
+
+/* Recharts Bar Chart hover 배경 효과 커스터마이징 */
+.recharts-tooltip-cursor {
+  fill: #f9fafb !important;
+  stroke: rgba(0, 0, 0, 0.05) !important;
+  stroke-width: 1 !important;
+}
+
+/* Recharts 바차트 클릭 시 outline 제거 */
+.recharts-bar-rectangle:focus,
+.recharts-bar-rectangle:focus-visible,
+.recharts-bar rect:focus,
+.recharts-bar rect:focus-visible,
+.recharts-wrapper svg:focus,
+.recharts-wrapper svg:focus-visible,
+.recharts-surface:focus,
+.recharts-surface:focus-visible {
+  outline: none !important;
+}
+
+/* Recharts SVG 요소 outline 제거 */
+.recharts-wrapper * {
+  outline: none !important;
+}
