@@ -5,7 +5,7 @@ import Header from './components/Header'
 import TabNavigation from './components/TabNavigation'
 import CustomersTable from './components/CustomersTable/CustomersTable'
 import PurchasesTab from './components/PurchasesTab'
-import PurchaseFrequencyChart from './components/PurchaseFrequencyChart'
+import PurchaseFrequencyChart from './components/PurchaseFrequencyChart/PurchaseFrequencyChartContainer'
 import type { Customer } from './types/api'
 import { TabId } from './types/tabs'
 
