@@ -32,11 +32,9 @@ export default function CustomersTable({ onCustomerSelect }: CustomersTableProps
   const apiParams: CustomersParams = useMemo(() => {
     const params: CustomersParams = {}
 
-    // 정렬 설정 (기본값: id 기준 오름차순)
-    if (sorting.length > 0) {
-      params.sortBy = sorting[0]?.desc ? 'desc' : 'asc'
-    } else {
-      params.sortBy = 'asc'
+    // 정렬 설정
+    if (sorting.length > 0 && sorting[0].id === 'totalAmount') {
+      params.sortBy = sorting[0].desc ? 'desc' : 'asc'
     }
 
     // 이름 필터 설정
